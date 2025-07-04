@@ -3,19 +3,19 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'rxjs',
-    loadChildren: () => import('./rxjs/rxjs.module').then(m => m.RxjsModule)
+    loadComponent: () => import('./rxjs/rxjs-smart.component').then(m => m.RxjsSmartComponent)
   },
   {
     path: 'directives',
-    loadChildren: () => import('./directives/directives.module').then(m => m.DirectivesModule)
+    loadComponent: () => import('./directives/directives-smart.component').then(m => m.DirectivesSmartComponent)
   },
   {
     path: 'services',
-    loadChildren: () => import('./services/services.module').then(m => m.ServicesModule)
+    loadComponent: () => import('./services/services-smart.component').then(m => m.ServicesSmartComponent)
   },
   {
     path: 'signals',
-    loadChildren: () => import('./signals/signals.module').then(m => m.SignalsModule)
+    loadComponent: () => import('./signals/signals-smart.component').then(m => m.SignalsSmartComponent)
   },
   {
     path: '',

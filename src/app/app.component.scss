@@ -1,0 +1,27 @@
+// Style for the pill navigation with line break separator
+.pill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  background: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.pill:hover, .pill:focus {
+  background: #e0e0e0;
+}
+
+/* Add a line break separator between links except the last */
+.pill:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
