@@ -1,9 +1,11 @@
-<main>
-  <nav class="pill-group">
-    <a class="pill" routerLink="/rxjs">Rxjs</a>
-    <a class="pill" routerLink="/directives">Directives</a>
-    <a class="pill" routerLink="/services">Services</a>
-    <a class="pill" routerLink="/signals">Signals</a>
+<div class="app-layout">
+  <nav class="pill-group app-nav">
+    <a class="pill" routerLink="/rxjs" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Rxjs</a>
+    <a class="pill" routerLink="/directives" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Directives</a>
+    <a class="pill" routerLink="/services" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Services</a>
+    <a class="pill" routerLink="/signals" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Signals</a>
   </nav>
-</main>
-<router-outlet />
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+</div>

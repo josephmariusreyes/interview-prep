@@ -1,3 +1,22 @@
+// Layout for app.component.html
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.app-nav {
+  width: 20%;
+  min-width: 150px;
+  background: #f8f9fa;
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+
+.app-main {
+  width: 80%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 // Style for the pill navigation with line break separator
 .pill-group {
   display: flex;
