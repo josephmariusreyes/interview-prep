@@ -18,6 +18,10 @@ export const routes: Routes = [
     loadComponent: () => import('./signals/signals-smart.component').then(m => m.SignalsSmartComponent)
   },
   {
+    path: 'content-projection',
+    loadComponent: () => import('./content-projection/content-projection-smart.component').then(m => m.ContentProjectionSmartComponent)
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'rxjs'
