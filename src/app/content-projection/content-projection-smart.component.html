@@ -1,0 +1,102 @@
+<div class="content-projection-container">
+  <h1>Content Projection Examples</h1>
+  
+  <section class="example-section">
+    <h2>1. Single-Slot Content Projection</h2>
+    <p>Basic content projection using a single <code>&lt;ng-content&gt;</code> slot.</p>
+    
+    <app-card>
+      <h3>This is projected content</h3>
+      <p>Any content placed inside the card component will be projected into it.</p>
+      <button>Projected Button</button>
+    </app-card>
+  </section>
+
+  <section class="example-section">
+    <h2>2. Multi-Slot Content Projection</h2>
+    <p>Using <code>select</code> attribute to project content into specific slots.</p>
+    
+    <app-panel>
+      <div panel-header>
+        <h3>Panel Title</h3>
+        <button>✕</button>
+      </div>
+      <div panel-body>
+        <p>This content goes into the body slot.</p>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+      <div panel-footer>
+        <button>Cancel</button>
+        <button>Save</button>
+      </div>
+    </app-panel>
+  </section>
+
+  <section class="example-section">
+    <h2>3. Conditional Content Projection</h2>
+    <p>Content projection with ng-template and ngTemplateOutlet.</p>
+    
+    <app-card>
+      <div class="conditional-example">
+        <p>This card demonstrates conditional content projection.</p>
+        <p>Content can be conditionally rendered based on component logic.</p>
+      </div>
+    </app-card>
+  </section>
+
+  <section class="example-section">
+    <h2>4. Complex Multi-Slot Projection (Tabs)</h2>
+    <p>Advanced example with multiple named slots for tab components.</p>
+    
+    <app-tabs>
+      <app-tab title="First Tab">
+        <h4>First Tab Content</h4>
+        <p>This is the content of the first tab. It demonstrates how to project content into specific tab panels.</p>
+      </app-tab>
+      <app-tab title="Second Tab">
+        <h4>Second Tab Content</h4>
+        <p>Each tab can have completely different content projected into it.</p>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+      </app-tab>
+      <app-tab title="Third Tab">
+        <h4>Third Tab Content</h4>
+        <p>Tabs can contain any HTML content including forms, images, or other components.</p>
+      </app-tab>
+    </app-tabs>
+  </section>
+
+  <section class="example-section">
+    <h2>5. Multiple Cards with Different Content</h2>
+    <p>Reusing the same component with different projected content.</p>
+    
+    <div class="card-grid">
+      <app-card>
+        <h4>Card 1</h4>
+        <p>First card with unique content.</p>
+      </app-card>
+      
+      <app-card>
+        <h4>Card 2</h4>
+        <p>Second card with different content.</p>
+        <img src="https://via.placeholder.com/150" alt="Placeholder">
+      </app-card>
+      
+      <app-card>
+        <h4>Card 3</h4>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ul>
+      </app-card>
+    </div>
+  </section>
+</div>
